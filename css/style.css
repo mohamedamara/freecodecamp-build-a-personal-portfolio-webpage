@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+#navbar {
+  height: 70px;
+  background-color: #2c3e50;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 70px;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: white;
+  margin-left: 35px;
+  font-size: 1.2rem;
+}
+
+#navbar a:hover {
+  color: #1472b5;
+}
+
+#welcome-section {
+  height: 100vh;
+  background-color: #1472b5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+
+#welcome-section h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+#welcome-section p {
+  font-size: 2rem;
+  font-style: italic;
+}
+
+#projects {
+  background-color: #2c3e50;
+  text-align: center;
+  padding-top: 50px;
+}
+
+#projects p {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+#projects-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px 20px 70px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  display: block;
+  width: 30.5%;
+  margin: 17px 15px;
+  text-decoration: none;
+}
+
+.project-card .project-preview {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  overflow: hidden;
+}
+
+.project-card .project-preview img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-card .project-tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  color: black;
+  height: 50px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+#contact {
+  padding: 50px 0 80px;
+  text-align: center;
+  background-color: #1472b5;
+}
+
+#contact p {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+#contact div {
+  padding: 30px;
+  display: inline;
+}
+
+#contact div i {
+  font-size: 1.8rem;
+  margin-right: 5px;
+}
+
+#contact div a {
+  color: white;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+footer {
+  height: 60px;
+  background-color: #2c3e50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer i {
+  color: red;
+  margin: 0 5px;
+}
+
+@media (max-width: 1115px) {
+  .project-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 725px) {
+  .project-card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 632px) {
+  #contact {
+    padding: 50px 0 50px;
+  }
+
+  #contact p {
+    margin-bottom: 20px;
+  }
+
+  #contact div {
+    padding: 15px;
+    display: block;
+  }
+}
